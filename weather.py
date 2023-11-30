@@ -12,7 +12,7 @@ class Weather(object):
             'content-type': 'application/json',
             'Accept': 'application/json'
         }
-
+ 
     def current_temp(self, location):
         latest = self._latest_observations(location)
         t = latest['temperature']['value']
